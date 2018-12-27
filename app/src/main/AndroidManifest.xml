@@ -19,7 +19,8 @@
         <activity
             android:name=".beranda"
             android:label="@string/title_activity_beranda"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".contact_us"></activity>
     </application>
 
 </manifest>
