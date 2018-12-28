@@ -18,9 +18,12 @@
         </activity>
         <activity
             android:name=".beranda"
-            android:label="@string/title_activity_beranda"
             android:theme="@style/AppTheme" />
-        <activity android:name=".contact_us"></activity>
+        <activity android:name=".contact_us" />
+        <activity android:name=".profile" />
+        <activity android:name=".tagihan" />
+        <activity android:name=".kamar" />
+        <activity android:name=".setting"></activity>
     </application>
 
 </manifest>
