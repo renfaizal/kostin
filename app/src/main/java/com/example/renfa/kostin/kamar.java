@@ -5,14 +5,14 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
 public class kamar extends AppCompatActivity {
-    Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kamar);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setLogo(R.drawable.logo);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        toolbar.setLogo(R.drawable.logo_kostin);
         toolbar.setNavigationIcon(R.drawable.ic_nav_back);
     }
 }

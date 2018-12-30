@@ -19,16 +19,16 @@ import android.widget.Button;
 
 public class beranda extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener{
-    Toolbar toolbar;
     Button btnRoom, btnInvoice, btnProfile, btnSetting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beranda);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setLogo(R.drawable.logo);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        toolbar.setLogo(R.drawable.logo_kostin);
         toolbar.setNavigationIcon(R.drawable.ic_nav_back);
 
 
