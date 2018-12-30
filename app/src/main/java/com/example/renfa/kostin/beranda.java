@@ -73,10 +73,22 @@ public class beranda extends AppCompatActivity
         Intent i;
 
         switch (v.getId()){
-            case R.id.btnRoom : i = new Intent(this,kamar.class); startActivity(i); break;
-            case R.id.btnInvoice : i = new Intent(this,tagihan.class); startActivity(i); break;
-            case R.id.btnProfile : i = new Intent(this,profile.class); startActivity(i); break;
-            case R.id.btnSetting : i = new Intent(this,setting.class); startActivity(i); break;
+            case R.id.btnRoom :
+                i = new Intent(this,kamar.class);
+                startActivity(i);
+                break;
+            case R.id.btnInvoice :
+                i = new Intent(this,tagihan.class);
+                startActivity(i);
+                break;
+            case R.id.btnProfile :
+                i = new Intent(this,profile.class);
+                startActivity(i);
+                break;
+            case R.id.btnSetting :
+                i = new Intent(this,setting.class);
+                startActivity(i);
+                break;
             default:break;
         }
     }
