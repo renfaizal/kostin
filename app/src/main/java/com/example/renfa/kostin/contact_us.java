@@ -3,6 +3,7 @@ package com.example.renfa.kostin;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 
 public class contact_us extends AppCompatActivity {
     @Override
@@ -11,7 +12,14 @@ public class contact_us extends AppCompatActivity {
         setContentView(R.layout.activity_contact_us);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         toolbar.setLogo(R.drawable.logo_kostin);
         toolbar.setNavigationIcon(R.drawable.ic_nav_back);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }

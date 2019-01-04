@@ -23,7 +23,6 @@
         <activity android:name=".profile" />
         <activity android:name=".tagihan" />
         <activity android:name=".kamar" />
-        <activity android:name=".setting"></activity>
     </application>
 
 </manifest>

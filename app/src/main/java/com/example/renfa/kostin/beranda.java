@@ -35,12 +35,10 @@ public class beranda extends AppCompatActivity
         btnRoom = (Button) findViewById(R.id.btnRoom);
         btnInvoice = (Button) findViewById(R.id.btnInvoice);
         btnProfile = (Button) findViewById(R.id.btnProfile);
-        btnSetting = (Button) findViewById(R.id.btnSetting);
 
         btnRoom.setOnClickListener(this);
         btnInvoice.setOnClickListener(this);
         btnProfile.setOnClickListener(this);
-        btnSetting.setOnClickListener(this);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -85,10 +83,6 @@ public class beranda extends AppCompatActivity
                 i = new Intent(this,profile.class);
                 startActivity(i);
                 break;
-            case R.id.btnSetting :
-                i = new Intent(this,setting.class);
-                startActivity(i);
-                break;
             default:break;
         }
     }
@@ -129,7 +123,7 @@ public class beranda extends AppCompatActivity
             Intent openMenu = new Intent(beranda.this,profile.class);
             startActivity(openMenu);
         } else if (id == R.id.nav_exit) {
-
+            finish();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
